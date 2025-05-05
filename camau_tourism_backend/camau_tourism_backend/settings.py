@@ -115,7 +115,7 @@ MIDDLEWARE = [
 # set quyền đăng nhập cho host reactjs
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "https://12171f56-4766-45ac-99e4-36a7cb33a184.e1-us-east-azure.choreoapps.dev/",
+    "https://12171f56-4766-45ac-99e4-36a7cb33a184.e1-us-east-azure.choreoapps.dev",
 ]
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
