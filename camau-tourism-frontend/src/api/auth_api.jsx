@@ -5,6 +5,7 @@ export async function registerUser(data) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "api-key": "7A4IC6oCpI3o0zGIiQnFUb4sHC9m",
     },
     body: JSON.stringify({
       username: data.name,
@@ -25,6 +26,7 @@ export async function loginUser(data) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "api-key": "7A4IC6oCpI3o0zGIiQnFUb4sHC9m",
     },
     body: JSON.stringify({
       username: data.username,
