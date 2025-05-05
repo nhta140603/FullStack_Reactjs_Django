@@ -1,4 +1,4 @@
-const API_URL = "/choreo-apis/camautourismbackend-60135285:8000";
+const API_URL = "/choreo-apis/camautourismbackend-60135285:8000/";
 
 export async function registerUser(data) {
   const response = await fetch(`${API_URL}register/`, {
