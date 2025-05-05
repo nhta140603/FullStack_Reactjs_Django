@@ -31,15 +31,15 @@ class UserLoginView(generics.GenericAPIView):
             response.set_cookie(
                 key="accessToken",
                 value=str(token.access_token),
-                httponly=False,
-                secure=False,
+                httponly=True,
+                secure=True,
                 samesite="Lax"
             )
             response.set_cookie(
                 key="refreshToken",
                 value=str(token),
-                httponly=False,
-                secure=False,
+                httponly=True,
+                secure=True,
                 samesite="Lax"
             )
             return response
