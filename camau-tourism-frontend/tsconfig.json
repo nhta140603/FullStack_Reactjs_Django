@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "jsx": "react-jsx"
+    "target": "es2017",              // or at least "es2015"
+    "module": "esnext",              // or "commonjs" if needed
+    "lib": ["dom", "dom.iterable", "es2017"], // add "es2017" or at least "es2015"
+    "esModuleInterop": true,         // fix for react-toastify etc.
+    "moduleResolution": "node",      // consider "node16" or "nodenext" for React Router 6+
+    "jsx": "react-jsx",              // for React 17+ or "react" for below
+    "skipLibCheck": true,            // optional, but helps avoid annoying d.ts errors
+    // ...any other options you need
   },
   "include": [
     "src"
