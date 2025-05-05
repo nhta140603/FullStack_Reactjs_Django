@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api/client/";
+const API_URL = "https://45ba24f4-9c85-433d-aaad-1ab94d814491-dev.e1-us-east-azure.choreoapis.dev/djangoreactjsapp/camautourismbackend/v1.0/api/client/";
 
 export async function registerUser(data) {
   const response = await fetch(`${API_URL}register/`, {
@@ -31,7 +31,6 @@ export async function loginUser(data) {
       password: data.password,
     }),
     credentials: "include",
-
   });
   const result = await response.json();
   if(!response.ok)
